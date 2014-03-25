@@ -61,7 +61,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'CRM_DB',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'omer123',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -85,3 +85,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Static root
+# https://docs.djangoproject.com/en/1.6/ref/settings/#std:setting-STATIC_ROOT
+
+STATIC_ROOT = '/home/laptomer/Code/CoffeeWP/crm/CRM/static'
