@@ -7,7 +7,6 @@ class Customer(models.Model):
     phone_number = models.CharField('Phone Number', max_length=20)
     website = models.URLField('Website Address')
     email = models.EmailField('E-Mail')
-    tasks = models.URLField('Tasks')
     contact_date = models.DateTimeField('Contact Data')
 
     def __unicode__(self):
@@ -17,6 +16,7 @@ class Customer(models.Model):
 class Project(models.Model):
     customer_name = models.ForeignKey(Customer)
     name = models.CharField('Name', max_length=70)
+    tasks = models.URLField('Tasks')
 
     def __unicode__(self):
         return self.name

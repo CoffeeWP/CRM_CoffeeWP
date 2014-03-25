@@ -13,7 +13,6 @@ class CustomerAdmin(admin.ModelAdmin):
                                              'phone_number',
                                              'website',
                                              'email',
-                                             'tasks',
                                              'contact_date')}),
     ]
     inlines = [ProjectInline]
@@ -33,7 +32,8 @@ class OutcomeInline(admin.TabularInline):
 class ProjectAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Project Information', {'fields': ('customer_name',
-                                            'name')}),
+                                            'name',
+                                            'tasks')}),
     ]
     inlines = [IncomeInline, OutcomeInline]
     list_display = ('customer_name', 'name')
