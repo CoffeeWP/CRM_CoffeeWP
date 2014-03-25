@@ -47,7 +47,7 @@ class IncomeAdmin(admin.ModelAdmin):
                                            'type',
                                            'value',
                                            'work_time',
-                                           'receipt',
+                                           'recipe',
                                            'note')}),
     ]
 admin.site.register(Income, IncomeAdmin)
