@@ -28,7 +28,7 @@ class Income(models.Model):
     type = models.CharField('Type', max_length=100)
     value = models.IntegerField('Value')
     work_time = models.IntegerField('Work Time')
-    recipe = models.BooleanField('Recipe')
+    receipt = models.BooleanField('Receipt')
     note = models.TextField('Note')
 
     def __unicode__(self):
