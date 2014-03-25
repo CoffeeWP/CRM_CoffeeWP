@@ -36,7 +36,7 @@ class Migration(SchemaMigration):
             ('type', self.gf('django.db.models.fields.CharField')(max_length=100)),
             ('value', self.gf('django.db.models.fields.IntegerField')()),
             ('work_time', self.gf('django.db.models.fields.IntegerField')()),
-            ('recipe', self.gf('django.db.models.fields.BooleanField')()),
+            ('receipt', self.gf('django.db.models.fields.BooleanField')()),
             ('note', self.gf('django.db.models.fields.TextField')()),
         ))
         db.send_create_signal(u'customers', ['Income'])
@@ -84,7 +84,7 @@ class Migration(SchemaMigration):
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'note': ('django.db.models.fields.TextField', [], {}),
             'project_name': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['customers.Project']"}),
-            'recipe': ('django.db.models.fields.BooleanField', [], {}),
+            'receipt': ('django.db.models.fields.BooleanField', [], {}),
             'type': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
             'value': ('django.db.models.fields.IntegerField', [], {}),
             'work_time': ('django.db.models.fields.IntegerField', [], {})
