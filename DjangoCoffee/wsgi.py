@@ -1,4 +1,4 @@
-python manage.py runserver"""
+"""
 WSGI config for DjangoCoffee project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
