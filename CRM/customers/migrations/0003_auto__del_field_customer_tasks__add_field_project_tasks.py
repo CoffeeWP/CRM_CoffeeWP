@@ -66,4 +66,6 @@ class Migration(SchemaMigration):
         }
     }
 
+
+
     complete_apps = ['customers']
