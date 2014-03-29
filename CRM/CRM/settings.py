@@ -63,7 +63,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'CRM_DB',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'omer123',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -74,7 +74,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC + 2'
+TIME_ZONE = 'Asia/Jerusalem'
 
 USE_I18N = True
 
